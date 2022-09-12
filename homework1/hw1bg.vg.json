@@ -1,81 +1,43 @@
 {
-    "$schema": "https://vega.github.io/schema/vega/v5.json",
-    "description": "A basic stacked bar chart example.",
-    "width": 500,
-    "height": 200,
-    "padding": 5,
-  
-    "data": [
-      {
-        "name": "table",
-        "values": [
-          {"x": 1995, "y": 33.5, "c": 0}, {"x": 1995, "y": 27.9, "c": 1}, {"x": 1995, "y": 19.1, "c": 2},
-          {"x": 2000, "y": 31.4, "c": 0}, {"x": 2000, "y": 23.9, "c": 1}, {"x": 2000, "y": 14.6, "c": 2},
-          {"x": 2005, "y": 23.2, "c": 0}, {"x": 2005, "y": 14.9, "c": 1}, {"x": 2005, "y": 9.3, "c": 2},
-          {"x": 2009, "y": 20.1, "c": 0}, {"x": 2009, "y": 13.1, "c": 1}, {"x": 2009, "y": 6.5, "c": 2},
-          {"x": 2015, "y": 11.4, "c": 0}, {"x": 2015, "y": 6.3, "c": 1}, {"x": 2015, "y": 3.6, "c": 2},
-          {"x": 2018, "y": 7.6, "c": 0}, {"x": 2018, "y": 4.2, "c": 1}, {"x": 2018, "y": 2.2, "c": 2},
-          {"x": 2019, "y": 5.7, "c": 0}, {"x": 2019, "y": 3.4, "c": 1}, {"x": 2019, "y": 2.3, "c": 2},
-          {"x": 2020, "y": 7.5, "c": 0}, {"x": 2020, "y": 3.2, "c": 1}, {"x": 2020, "y": 2.2, "c": 2}
-          
-        ],
-        "transform": [
-          {
-            "type": "stack",
-            "groupby": ["x"],
-            "sort": {"field": "c"},
-            "field": "y"
-          }
-        ]
-      }
-    ],
-  
-    "scales": [
-      {
-        "name": "x",
-        "type": "band",
-        "range": "width",
-        "domain": {"data": "table", "field": "x"}
-      },
-      {
-        "name": "y",
-        "type": "linear",
-        "range": "height",
-        "nice": true, "zero": true,
-        "domain": {"data": "table", "field": "y1"}
-      },
-      {
-        "name": "color",
-        "type": "ordinal",
-        "range": "category",
-        "domain": {"data": "table", "field": "c"}
-      }
-    ],
-  
-    "axes": [
-      {"orient": "bottom", "scale": "x", "zindex": 1},
-      {"orient": "left", "scale": "y", "zindex": 1}
-    ],
-  
-    "marks": [
-      {
-        "type": "rect",
-        "from": {"data": "table"},
-        "encode": {
-          "enter": {
-            "x": {"scale": "x", "field": "x"},
-            "width": {"scale": "x", "band": 1, "offset": -1},
-            "y": {"scale": "y", "field": "y0"},
-            "y2": {"scale": "y", "field": "y1"},
-            "fill": {"scale": "color", "field": "c"}
-          },
-          "update": {
-            "fillOpacity": {"value": 1}
-          },
-          "hover": {
-            "fillOpacity": {"value": 0.5}
-          }
-        }
-      }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {"text": "1995-2020 Teenage Cigarette Users", "anchor": "middle"},
+  "data": {
+    "values": [
+      {"year": "1995", "percent": 33.5, "group": "12th Grade"}, {"year": "1995", "percent": 27.9, "group": "10th Grade"}, {"year": "1995", "percent": 19.1, "group": "8th Grade"},
+      {"year": "2000", "percent": 31.4, "group": "12th Grade"}, {"year": "2000", "percent": 23.9, "group": "10th Grade"}, {"year": "2000", "percent": 14.6, "group": "8th Grade"},
+      {"year": "2005", "percent": 23.2, "group": "12th Grade"}, {"year": "2005", "percent": 14.9, "group": "10th Grade"}, {"year": "2005", "percent": 9.3, "group": "8th Grade"},
+      {"year": "2009", "percent": 20.1, "group": "12th Grade"}, {"year": "2009", "percent": 13.1, "group": "10th Grade"}, {"year": "2009", "percent": 6.5, "group": "8th Grade"},
+      {"year": "2015", "percent": 11.4, "group": "12th Grade"}, {"year": "2015", "percent": 6.3, "group": "10th Grade"}, {"year": "2015", "percent": 3.6, "group": "8th Grade"},
+      {"year": "2018", "percent": 7.6, "group": "12th Grade"}, {"year": "2018", "percent": 4.2, "group": "10th Grade"}, {"year": "2018", "percent": 2.2, "group": "8th Grade"},
+      {"year": "2019", "percent": 5.7, "group": "12th Grade"}, {"year": "2019", "percent": 3.4, "group": "10th Grade"}, {"year": "2019", "percent": 2.3, "group": "8th Grade"},
+      {"year": "2020", "percent": 7.5, "group": "12th Grade"}, {"year": "2020", "percent": 3.2, "group": "10th Grade"}, {"year": "2020", "percent": 2.2, "group": "8th Grade"}
     ]
+  },
+  "width": {"step": 32},
+  "mark": "bar",
+  "encoding": {
+    "column": {
+      "field": "year", "type": "ordinal", "spacing": 5,
+      "header": {"orient": "bottom"}
+    },
+    "y": {
+      "field": "percent",
+      "type": "quantitative",
+      "title": "Percent Smoking Cigarettes",
+      "axis": {"grid": true}
+    },
+    "x": {
+      "field": "group",
+      "type": "ordinal",
+      "axis": null
+    },
+    "color": {
+      "field": "group",
+      "scale": {"range": ["#ba7b73", "#7398ba","#008080"]}
+    }
+  },
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {"domainWidth": 1}
   }
+}
