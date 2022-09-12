@@ -1,72 +1,120 @@
 {
     "$schema": "https://vega.github.io/schema/vega/v5.json",
-    "description": "A basic bar chart example, with value labels shown upon mouse hover.",
+    "description": "A basic grouped bar chart example.",
     "width": 400,
-    "height": 200,
+    "height": 340,
     "padding": 5,
   
     "data": [
-        {
-          "name": "table",
-          "values": [
-            {"x": 1995, "y": 33.5, "c": 0}, {"x": 1995, "y": 27.9, "c": 1}, {"x": 1995, "y": 19.1, "c": 2},
-            {"x": 2000, "y": 31.4, "c": 0}, {"x": 2000, "y": 23.9, "c": 1}, {"x": 2000, "y": 14.6, "c": 2},
-            {"x": 2005, "y": 23.2, "c": 0}, {"x": 2005, "y": 14.9, "c": 1}, {"x": 2005, "y": 9.3, "c": 2},
-            {"x": 2009, "y": 20.1, "c": 0}, {"x": 2009, "y": 13.1, "c": 1}, {"x": 2009, "y": 6.5, "c": 2},
-            {"x": 2015, "y": 11.4, "c": 0}, {"x": 2015, "y": 6.3, "c": 1}, {"x": 2015, "y": 3.6, "c": 2},
-            {"x": 2018, "y": 7.6, "c": 0}, {"x": 2018, "y": 4.2, "c": 1}, {"x": 2018, "y": 2.2, "c": 2},
-            {"x": 2019, "y": 5.7, "c": 0}, {"x": 2019, "y": 3.4, "c": 1}, {"x": 2019, "y": 2.3, "c": 2},
-            {"x": 2020, "y": 7.5, "c": 0}, {"x": 2020, "y": 3.2, "c": 1}, {"x": 2020, "y": 2.2, "c": 2}
-          ]
+      {
+        "name": "table",
+        "values": [
+              {"year": 1995, "value": 33.5, "group": 0}, {"year": 1995, "value": 27.9, "group": 1}, {"year": 1995, "value": 19.1, "group": 2},
+              {"year": 2000, "value": 31.4, "group": 0}, {"year": 2000, "value": 23.9, "group": 1}, {"year": 2000, "value": 14.6, "group": 2},
+              {"year": 2005, "value": 23.2, "group": 0}, {"year": 2005, "value": 14.9, "group": 1}, {"year": 2005, "value": 9.3, "group": 2},
+              {"year": 2009, "value": 20.1, "group": 0}, {"year": 2009, "value": 13.1, "group": 1}, {"year": 2009, "value": 6.5, "group": 2},
+              {"year": 2015, "value": 11.4, "group": 0}, {"year": 2015, "value": 6.3, "group": 1}, {"year": 2015, "value": 3.6, "group": 2},
+              {"year": 2018, "value": 7.6, "group": 0}, {"year": 2018, "value": 4.2, "group": 1}, {"year": 2018, "value": 2.2, "group": 2},
+              {"year": 2019, "value": 5.7, "group": 0}, {"year": 2019, "value": 3.4, "group": 1}, {"year": 2019, "value": 2.3, "group": 2},
+              {"year": 2020, "value": 7.5, "group": 0}, {"year": 2020, "value": 3.2, "group": 1}, {"year": 2020, "value": 2.2, "group": 2}
+            ]
+      }
+    ],
+  
+    "scales": [
+      {
+        "name": "yscale",
+        "type": "band",
+        "domain": {"data": "table", "field": "year"},
+        "range": "height",
+        "padding": 0.2
+      },
+      {
+        "name": "xscale",
+        "type": "linear",
+        "domain": {"data": "table", "field": "value"},
+        "range": "width",
+        "round": true,
+        "zero": true,
+        "nice": true
+      },
+      {
+        "name": "color",
+        "type": "ordinal",
+        "domain": {"data": "table", "field": "group"},
+        "range": {"scheme": "category20"}
+      }
+    ],
+  
+    "axes": [
+      {"orient": "left", "scale": "yscale", "tickSize": 0, "labelPadding": 4, "zindex": 1},
+      {"orient": "bottom", "scale": "xscale"}
+    ],
+  
+    "marks": [
+      {
+        "type": "group",
+  
+        "from": {
+          "facet": {
+            "data": "table",
+            "name": "facet",
+            "groupby": "year"
           }
-          ],
-        
-  "scales": [
-        {
-          "name": "x",
-          "type": "band",
-          "range": "width",
-          "domain": {"data": "table", "field": "x"}
         },
-        {
-          "name": "y",
-          "type": "linear",
-          "range": "height",
-          "nice": true, "zero": true,
-          "domain": {"data": "table", "field": "y1"}
+  
+        "encode": {
+          "enter": {
+            "y": {"scale": "yscale", "field": "year"}
+          }
         },
-        {
-          "name": "color",
-          "type": "ordinal",
-          "range": "category",
-          "domain": {"data": "table", "field": "c"}
-        }
-      ],
-    
-      "axes": [
-        {"orient": "bottom", "scale": "x", "zindex": 1},
-        {"orient": "left", "scale": "y", "zindex": 1}
-      ],
-    
-      "marks": [
-        {
-          "type": "rect",
-          "from": {"data": "table"},
-          "encode": {
-            "enter": {
-              "x": {"scale": "x", "field": "x"},
-              "width": {"scale": "x", "band": 1, "offset": -1},
-              "y": {"scale": "y", "field": "y0"},
-              "y2": {"scale": "y", "field": "y1"},
-              "fill": {"scale": "color", "field": "c"}
-            },
-            "update": {
-              "fillOpacity": {"value": 1}
-            },
-            "hover": {
-              "fillOpacity": {"value": 0.5}
+  
+        "signals": [
+          {"name": "height", "update": "bandwidth('yscale')"}
+        ],
+  
+        "scales": [
+          {
+            "name": "pos",
+            "type": "band",
+            "range": "height",
+            "domain": {"data": "facet", "field": "group"}
+          }
+        ],
+  
+        "marks": [
+          {
+            "name": "bars",
+            "from": {"data": "facet"},
+            "type": "rect",
+            "encode": {
+              "enter": {
+                "y": {"scale": "pos", "field": "group"},
+                "height": {"scale": "pos", "band": 1},
+                "x": {"scale": "xscale", "field": "value"},
+                "x2": {"scale": "xscale", "value": 0},
+                "fill": {"scale": "color", "field": "group"}
+              }
+            }
+          },
+          {
+            "type": "text",
+            "from": {"data": "bars"},
+            "encode": {
+              "enter": {
+                "x": {"field": "x2", "offset": -5},
+                "y": {"field": "y", "offset": {"field": "height", "mult": 0.5}},
+                "fill": [
+                  {"test": "contrast('white', datum.fill) > contrast('black', datum.fill)", "value": "white"},
+                  {"value": "black"}
+                ],
+                "align": {"value": "right"},
+                "baseline": {"value": "middle"},
+                "text": {"field": "datum.value"}
+              }
             }
           }
-        }
-      ]
+        ]
+      }
+    ]
   }
