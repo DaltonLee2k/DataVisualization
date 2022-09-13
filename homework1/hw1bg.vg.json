@@ -1,43 +1,35 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": {"text": "1995-2020 Teenage Cigarette Users", "anchor": "middle"},
+  "title": {"text": "1995-2020 Cigarette Sales", "anchor": "middle"},
   "data": {
     "values": [
-      {"year": "1995", "percent": 33.5, "group": "12th Grade"}, {"year": "1995", "percent": 27.9, "group": "10th Grade"}, {"year": "1995", "percent": 19.1, "group": "8th Grade"},
-      {"year": "2000", "percent": 31.4, "group": "12th Grade"}, {"year": "2000", "percent": 23.9, "group": "10th Grade"}, {"year": "2000", "percent": 14.6, "group": "8th Grade"},
-      {"year": "2005", "percent": 23.2, "group": "12th Grade"}, {"year": "2005", "percent": 14.9, "group": "10th Grade"}, {"year": "2005", "percent": 9.3, "group": "8th Grade"},
-      {"year": "2009", "percent": 20.1, "group": "12th Grade"}, {"year": "2009", "percent": 13.1, "group": "10th Grade"}, {"year": "2009", "percent": 6.5, "group": "8th Grade"},
-      {"year": "2015", "percent": 11.4, "group": "12th Grade"}, {"year": "2015", "percent": 6.3, "group": "10th Grade"}, {"year": "2015", "percent": 3.6, "group": "8th Grade"},
-      {"year": "2018", "percent": 7.6, "group": "12th Grade"}, {"year": "2018", "percent": 4.2, "group": "10th Grade"}, {"year": "2018", "percent": 2.2, "group": "8th Grade"},
-      {"year": "2019", "percent": 5.7, "group": "12th Grade"}, {"year": "2019", "percent": 3.4, "group": "10th Grade"}, {"year": "2019", "percent": 2.3, "group": "8th Grade"},
-      {"year": "2020", "percent": 7.5, "group": "12th Grade"}, {"year": "2020", "percent": 3.2, "group": "10th Grade"}, {"year": "2020", "percent": 2.2, "group": "8th Grade"}
+      {"year": "1995","sales": 482.3}, {"year": "1996","sales": 484.1}, {"year": "1997","sales": 478.6},{"year": "1998","sales": 458.6},
+      {"year": "1999","sales": 411.3},{"year": "2000","sales": 413.9},{"year": "2001","sales": 398.3},{"year": "2002","sales": 376.4},{"year": "2003","sales": 360.5},
+      {"year": "2004","sales": 361.3},{"year": "2005","sales": 351.6},{"year": "2006","sales": 343.3},{"year": "2007","sales": 337.7},{"year": "2008","sales": 320.0},
+      {"year": "2009","sales": 290.6},{"year": "2010","sales": 282.9},{"year": "2011","sales": 274.4},{"year": "2012","sales": 268.4},{"year": "2013","sales": 255.2},
+      {"year": "2014","sales": 254.7},{"year": "2015","sales": 244.2},{"year": "2016","sales": 240.5},{"year": "2017","sales": 229.1},{"year": "2018","sales": 216.9},
+      {"year": "2019","sales": 202.9},{"year": "2020","sales": 203.7}
     ]
   },
-  "width": {"step": 32},
+  "width": 500,
   "mark": "bar",
   "encoding": {
-    "column": {
-      "field": "year", "type": "ordinal", "spacing": 5,
-      "header": {"orient": "bottom"}
-    },
+
     "y": {
-      "field": "percent",
+      "field": "sales",
       "type": "quantitative",
-      "title": "Percent Smoking Cigarettes",
+      "title": "Cigarette Sales (billions)",
       "axis": {"grid": true}
     },
     "x": {
-      "field": "group",
-      "type": "ordinal",
-      "axis": null
+      "field": "year",
+      "type": "ordinal"
+      
     },
     "color": {
-      "field": "group",
-      "scale": {"range": ["#ba7b73", "#7398ba","#008080"]}
+      "field": "year",
+      "scale": {"range": ["#e68a00"]},
+      "legend": null
     }
-  },
-  "config": {
-    "view": {"stroke": "transparent"},
-    "axis": {"domainWidth": 1}
   }
 }
