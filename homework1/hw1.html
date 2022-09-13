@@ -10,17 +10,15 @@
 
   <h3>Hypothesis: Cigarette usage has steadily gone down in the US in the last 20 years</h3>
   <script>
-    const spec_crash_scatter = "scatter.vg.json";
-    vegaEmbed("#vis_time_series", spec_crash_scatter)
-        // result.view provides access to the Vega View API
-        .then(result => console.log(result))
-        .catch(console.warn);
-
-    const spec_crash_bar = "hw1bg.vg.json";
-    vegaEmbed("#vis_fatality_bar", spec_crash_bar)
-        // result.view provides access to the Vega View API
-        .then(result => console.log(result))
-        .catch(console.warn);
+    const spec1 = "scatter.vg.json"
+    const spec2 = "hw1bg.vg.json"
+    vegaEmbed("#vis1", spec1)
+          // result.view provides access to the Vega View API
+          .then(result => console.log(result))
+          .catch(console.warn);
+    vegaEmbed("#vis2", spec2)
+          // result.view provides access to the Vega View API
+          .then(result => console.log(result))
+          .catch(console.warn);
   </script>
-
 </html>
