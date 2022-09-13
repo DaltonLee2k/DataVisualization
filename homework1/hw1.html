@@ -4,14 +4,20 @@
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@5"></script>
-    
     <title>Dalton Lee Homework 1</title>
-  </head>
-  <body>
-  <h3>Hypothesis: Cigarette usage has steadily gone down in the US in the last 20 years</h3>
+</head>
+<style>
+    h3 {text-align: center;}
+    div {text-align: center;}
+    footer {text-align: center; color: blue;}
+</style>
+<body>
+    <h3>Hypothesis: Cigarette usage has steadily gone down in the US in the last 20 years</h3>
     <div id="vis1"></div>
     <div id="vis2"></div>
-  </body>
+    <footer>Sources: <a href=https://www.ftc.gov/system/files/documents/reports/federal-trade-commission-cigarette-report-2020-smokeless-tobacco-report-2020/p114508fy20cigarettereport.pdf>Cigarette Sales</a>,
+    <a href=https://www.cdc.gov/nchs/data/hus/2020-2021/SubUseTn.pdf>Cigarette Usage</a></footer>
+</body>
   <script>
     const spec1 = "scatter.vg.json"
     const spec2 = "hw1bg.vg.json"
