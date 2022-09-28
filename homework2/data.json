@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Milwaukee",
+    "pop2022": 573700,
+    "usps": "WI",
+    "lon": "-87.906471",
+    "lat": "43.038902"
+  },
+  {
+    "name": "Lincoln",
+    "pop2022": 297622,
+    "usps": "NE",
+    "lon": "-96.681679",
+    "lat": "40.806862"
+  },
+  {
+    "name": "Fargo",
+    "pop2022": 130078,
+    "usps": "ND",
+    "lon": "-96.789803",
+    "lat": "46.877186"
+  },
+  {
+    "name": "Green Bay",
+    "pop2022": 108063,
+    "usps": "WI",
+    "lon": "-88.015831",
+    "lat": "44.513332"
+  },
+  {
+    "name": "Appleton",
+    "pop2022": 76248,
+    "usps": "WI",
+    "lon": "-88.4",
+    "lat": "44.266667"
+  },
+  {
+    "name": "Iowa City",
+    "pop2022": 76222,
+    "usps": "IA",
+    "lon": "",
+    "lat": ""
+  },
+  {
+    "name": "Missoula",
+    "pop2022": 74829,
+    "usps": "MT",
+    "lon": "",
+    "lat": ""
+  },
+  {
+    "name": "Eau Claire",
+    "pop2022": 70129,
+    "usps": "WI",
+    "lon": "",
+    "lat": ""
+  },
+  {
+    "name": "Ames",
+    "pop2022": 67919,
+    "usps": "IA",
+    "lon": "",
+    "lat": ""
+  },
+  {
+    "name": "Grand Forks",
+    "pop2022": 60432,
+    "usps": "ND",
+    "lon": "",
+    "lat": ""
+  },
+  {
+    "name": "Dubuque",
+    "pop2022": 60073,
+    "usps": "IA",
+    "lon": "",
+    "lat": ""
+  },
+  {
+    "name": "Sheboygan",
+    "pop2022": 50057,
+    "usps": "WI",
+    "lon": "",
+    "lat": ""
+  },
+  {
+    "name": "Mankato",
+    "pop2022": 45524,
+    "usps": "MN",
+    "lon": "",
+    "lat": ""
+  },
+  {
+    "name": "Fond du Lac",
+    "pop2022": 45010,
+    "usps": "WI",
+    "lon": "",
+    "lat": ""
+  },
+  {
+    "name": "Wausau",
+    "pop2022": 40172,
+    "usps": "WI",
+    "lon": "",
+    "lat": ""
+  },
+  {
+    "name": "Fairbanks",
+    "pop2022": 32711,
+    "usps": "AK",
+    "lon": "",
+    "lat": ""
+  },
+  {
+    "name": "Watertown",
+    "pop2022": 24217,
+    "usps": "NY",
+    "lon": "",
+    "lat": ""
+  },
+  {
+    "name": "Fort Drum",
+    "pop2022": 16484,
+    "usps": "NY",
+    "lon": "",
+    "lat": ""
+  }
+]
