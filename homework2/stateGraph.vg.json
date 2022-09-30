@@ -1,0 +1,10 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {"text": "Alcohol Consumption by State", "anchor": "middle"},
+    "data": {"url": "stateData.json"},
+    "mark": "point",
+    "encoding": {
+        "x": {"field": "alcoholConsumptionGallons", "type": "quantitative"},
+        "y": {"field": "State", "type": "quantitative"}
+    }
+}

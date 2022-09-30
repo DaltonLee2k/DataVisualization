@@ -14,11 +14,17 @@
 <body>
     <h3>Hypothesis: Northern states consume more alcohol than Southern states</h3>
     <div id="vis1"></div>
+    <div id="vis2"></div>
     <footer>Sources: <a href="https://worldpopulationreview.com/us-city-rankings/drunkest-cities-in-america">City Data</a></footer>
 </body>
   <script>
     const spec1 = "geoPlot.vg.json"
+    const spec2 = "stateGraph.vg.json"
     vegaEmbed("#vis1", spec1)
+          // result.view provides access to the Vega View API
+          .then(result => console.log(result))
+          .catch(console.warn);
+    vegaEmbed("#vis1", spec2)
           // result.view provides access to the Vega View API
           .then(result => console.log(result))
           .catch(console.warn);
