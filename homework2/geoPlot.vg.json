@@ -8,7 +8,7 @@
     "layer": [
         {
             "data": {
-                "url": "data.json",
+                "url": "us-10m.json",
                 "format": {
                     "type": "topojson",
                     "feature": "states"
@@ -34,9 +34,19 @@
                     "type": "quantitative"
                   }
                 },
+                "layer": [{
+                    "mark": {
+                        "type": "circle",
+                        "color": "orange"
+                    },
+                    "encoding": {
+                        "text": {
+                            "field": "name",
+                            "type": "nominal"
+                        }
+                    }
+                }]
             }
-        }
-        
     ]
 
 }
