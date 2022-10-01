@@ -3,8 +3,10 @@
     "title": {"text": "Alcohol Consumption by State", "anchor": "middle"},
     "data": {"url": "stateData.json"},
     "mark": "circle",
+    "height": 800,
+    "width": 400,
     "encoding": {
         "x": {"field": "alcoholConsumptionGallons", "type": "quantitative", "title": "Alcohol Consumption Per Person Per Year (gallons)"},
-        "y": {"field": "State", "type": "ordinal"}
+        "y": {"field": "State", "type": "ordinal", "sort": [false]}
     }
 }
