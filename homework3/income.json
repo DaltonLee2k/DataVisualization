@@ -1,0 +1,204 @@
+[
+  {
+    "State": "Maryland",
+    "HouseholdIncome": 87063
+  },
+  {
+    "State": "New Jersey",
+    "HouseholdIncome": 85245
+  },
+  {
+    "State": "Massachusetts",
+    "HouseholdIncome": 84385
+  },
+  {
+    "State": "Hawaii",
+    "HouseholdIncome": 83173
+  },
+  {
+    "State": "Connecticut",
+    "HouseholdIncome": 79855
+  },
+  {
+    "State": "California",
+    "HouseholdIncome": 78672
+  },
+  {
+    "State": "New Hampshire",
+    "HouseholdIncome": 77923
+  },
+  {
+    "State": "Alaska",
+    "HouseholdIncome": 77790,
+    "id": 2
+  },
+  {
+    "State": "Washington",
+    "HouseholdIncome": 77006
+  },
+  {
+    "State": "Virginia",
+    "HouseholdIncome": 76398
+  },
+  {
+    "State": "Colorado",
+    "HouseholdIncome": 75231
+  },
+  {
+    "State": "Utah",
+    "HouseholdIncome": 74197
+  },
+  {
+    "State": "Minnesota",
+    "HouseholdIncome": 73382
+  },
+  {
+    "State": "New York",
+    "HouseholdIncome": 71117
+  },
+  {
+    "State": "Rhode Island",
+    "HouseholdIncome": 70305
+  },
+  {
+    "State": "Delaware",
+    "HouseholdIncome": 69110
+  },
+  {
+    "State": "Illinois",
+    "HouseholdIncome": 68428
+  },
+  {
+    "State": "Oregon",
+    "HouseholdIncome": 65667
+  },
+  {
+    "State": "North Dakota",
+    "HouseholdIncome": 65315
+  },
+  {
+    "State": "Wyoming",
+    "HouseholdIncome": 65304
+  },
+  {
+    "State": "Texas",
+    "HouseholdIncome": 63826
+  },
+  {
+    "State": "Pennsylvania",
+    "HouseholdIncome": 63627
+  },
+  {
+    "State": "Vermont",
+    "HouseholdIncome": 63477
+  },
+  {
+    "State": "Wisconsin",
+    "HouseholdIncome": 63293
+  },
+  {
+    "State": "Nebraska",
+    "HouseholdIncome": 63015
+  },
+  {
+    "State": "Nevada",
+    "HouseholdIncome": 62043
+  },
+  {
+    "State": "Iowa",
+    "HouseholdIncome": 61836
+  },
+  {
+    "State": "Arizona",
+    "HouseholdIncome": 61529
+  },
+  {
+    "State": "Georgia",
+    "HouseholdIncome": 61224
+  },
+  {
+    "State": "Kansas",
+    "HouseholdIncome": 61091
+  },
+  {
+    "State": "South Dakota",
+    "HouseholdIncome": 59896
+  },
+  {
+    "State": "Maine",
+    "HouseholdIncome": 59489
+  },
+  {
+    "State": "Michigan",
+    "HouseholdIncome": 59234
+  },
+  {
+    "State": "Idaho",
+    "HouseholdIncome": 58915
+  },
+  {
+    "State": "Indiana",
+    "HouseholdIncome": 58235
+  },
+  {
+    "State": "Ohio",
+    "HouseholdIncome": 58116
+  },
+  {
+    "State": "Florida",
+    "HouseholdIncome": 57703
+  },
+  {
+    "State": "Missouri",
+    "HouseholdIncome": 57290
+  },
+  {
+    "State": "North Carolina",
+    "HouseholdIncome": 56642
+  },
+  {
+    "State": "Montana",
+    "HouseholdIncome": 56539
+  },
+  {
+    "State": "South Carolina",
+    "HouseholdIncome": 54864
+  },
+  {
+    "State": "Tennessee",
+    "HouseholdIncome": 54833
+  },
+  {
+    "State": "Oklahoma",
+    "HouseholdIncome": 53840
+  },
+  {
+    "State": "Kentucky",
+    "HouseholdIncome": 52238
+  },
+  {
+    "State": "Alabama",
+    "HouseholdIncome": 52035,
+    "id": 1
+  },
+  {
+    "State": "New Mexico",
+    "HouseholdIncome": 51243
+  },
+  {
+    "State": "Louisiana",
+    "HouseholdIncome": 50800
+  },
+  {
+    "State": "Arkansas",
+    "HouseholdIncome": 49475
+  },
+  {
+    "State": "West Virginia",
+    "HouseholdIncome": 48037
+  },
+  {
+    "State": "Mississippi",
+    "HouseholdIncome": 46511
+  }
+]
