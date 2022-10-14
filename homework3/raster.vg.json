@@ -3,14 +3,14 @@
     "width": 500,
     "height": 300,
     "data": {
-      "url": "data/income.json"
+      "url": "income.json"
     },
     "transform": [
       {
         "lookup": "id",
         "from": {
           "data": {
-            "url": "data/us-10m.json",
+            "url": "us-10m.json",
             "format": {
               "type": "topojson",
               "feature": "states"
