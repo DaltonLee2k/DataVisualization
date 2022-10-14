@@ -1,0 +1,253 @@
+[
+    {
+      "State": "Maryland",
+      "UnemploymentRate": 4.3,
+      "id": 24
+    },
+    {
+      "State": "New Jersey",
+      "UnemploymentRate": 4.0,
+      "id": 34
+      
+    },
+    {
+      "State": "Massachusetts",
+      "UnemploymentRate": 3.6,
+      "id": 35
+    },
+    {
+      "State": "Hawaii",
+      "UnemploymentRate": 4.1,
+      "id": 15
+    },
+    {
+      "State": "Connecticut",
+      "UnemploymentRate": 4.1,
+      "id": 9
+    },
+    {
+      "State": "California",
+      "UnemploymentRate": 4.1,
+      "id": 6
+    },
+    {
+      "State": "New Hampshire",
+      "UnemploymentRate": 2.0,
+      "id": 33
+    },
+    {
+      "State": "Alaska",
+      "UnemploymentRate": 4.6,
+      "id": 2
+    },
+    {
+      "State": "Washington",
+      "UnemploymentRate": 3.7,
+      "id": 53
+    },
+    {
+      "State": "Virginia",
+      "UnemploymentRate": 2.6,
+      "id": 51
+    },
+    {
+      "State": "Colorado",
+      "UnemploymentRate": 3.4,
+      "id": 8
+    },
+    {
+      "State": "Utah",
+      "UnemploymentRate": 2.0,
+      "id": 49
+    },
+    {
+      "State": "Minnesota",
+      "UnemploymentRate": 1.9,
+      "id": 27
+    },
+    {
+      "State": "New York",
+      "UnemploymentRate": 4.7,
+      "id": 36
+    },
+    {
+      "State": "Rhode Island",
+      "UnemploymentRate": 2.8,
+      "id": 44
+    },
+    {
+      "State": "Delaware",
+      "UnemploymentRate": 4.5,
+      "id": 10
+    },
+    {
+      "State": "Illinois",
+      "UnemploymentRate": 4.5,
+      "id": 17
+    },
+    {
+      "State": "Oregon",
+      "UnemploymentRate": 3.7,
+      "id": 41
+    },
+    {
+      "State": "North Dakota",
+      "UnemploymentRate": 2.3,
+      "id": 38
+    },
+    {
+      "State": "Wyoming",
+      "UnemploymentRate": 3.1,
+      "id": 56
+    },
+    {
+      "State": "Texas",
+      "UnemploymentRate": 4.1,
+      "id": 48
+    },
+    {
+      "State": "Pennsylvania",
+      "UnemploymentRate": 4.2,
+      "id": 42
+    },
+    {
+      "State": "Vermont",
+      "UnemploymentRate": 2.1,
+      "id": 50
+    },
+    {
+      "State": "Wisconsin",
+      "UnemploymentRate": 3.1,
+      "id": 55
+    },
+    {
+      "State": "Nebraska",
+      "UnemploymentRate": 2.1,
+      "id": 31
+    },
+    {
+      "State": "Nevada",
+      "UnemploymentRate": 4.4,
+      "id": 32
+    },
+    {
+      "State": "Iowa",
+      "UnemploymentRate": 2.6,
+      "id": 19
+    },
+    {
+      "State": "Arizona",
+      "UnemploymentRate": 3.5,
+      "id": 4 
+    },
+    {
+      "State": "Georgia",
+      "UnemploymentRate": 2.8,
+      "id": 13
+    },
+    {
+      "State": "Kansas",
+      "UnemploymentRate": 2.5,
+      "id": 20 
+    },
+    {
+      "State": "South Dakota",
+      "UnemploymentRate": 2.3,
+      "id": 46
+    },
+    {
+      "State": "Maine",
+      "UnemploymentRate": 3.1,
+      "id": 23
+    },
+    {
+      "State": "Michigan",
+      "UnemploymentRate": 4.1,
+      "id": 26
+    },
+    {
+      "State": "Idaho",
+      "UnemploymentRate": 2.7,
+      "id": 16
+    },
+    {
+      "State": "Indiana",
+      "UnemploymentRate": 2.8,
+      "id": 18 
+    },
+    {
+      "State": "Ohio",
+      "UnemploymentRate": 4.0,
+      "id": 39
+    },
+    {
+      "State": "Florida",
+      "UnemploymentRate": 2.7,
+      "id": 12
+    },
+    {
+      "State": "Missouri",
+      "UnemploymentRate": 2.5,
+      "id": 29
+    },
+    {
+      "State": "North Carolina",
+      "UnemploymentRate": 3.5,
+      "id": 37
+    },
+    {
+      "State": "Montana",
+      "UnemploymentRate": 2.8,
+      "id": 30
+    },
+    {
+      "State": "South Carolina",
+      "UnemploymentRate": 3.1,
+      "id": 45
+    },
+    {
+      "State": "Tennessee",
+      "UnemploymentRate": 3.4,
+      "id": 47
+    },
+    {
+      "State": "Oklahoma",
+      "UnemploymentRate": 3.1,
+      "id": 40
+    },
+    {
+      "State": "Kentucky",
+      "UnemploymentRate": 3.8,
+      "id": 21
+    },
+    {
+      "State": "Alabama",
+      "UnemploymentRate": 2.6,
+      "id": 1
+    },
+    {
+      "State": "New Mexico",
+      "UnemploymentRate": 4.4,
+      "id": 35
+    },
+    {
+      "State": "Louisiana",
+      "UnemploymentRate": 3.5,
+      "id": 22
+    },
+    {
+      "State": "Arkansas",
+      "UnemploymentRate": 3.4,
+      "id": 5
+    },
+    {
+      "State": "West Virginia",
+      "UnemploymentRate": 3.9,
+      "id": 54
+    },
+    {
+      "State": "Mississippi",
+      "UnemploymentRate": 3.6,
+      "id": 28
+    }
+  ]
