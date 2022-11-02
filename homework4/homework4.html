@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@5"></script>
+    <title>Dalton Lee Homework 4</title>
+</head>
+<style>
+    h3 {text-align: center;}
+    div {text-align: center;}
+    footer {text-align: center; color: black;}
+</style>
+<body>
+    <h3>The Montana Grizzlies 2022 football schedule is one of the toughest in the big sky</h3>
+    <div id="vis1"></div>
+
+    <footer>Sources: <a href="espn.com">Games Played</a><a href="https://bigskyconf.com/standings.aspx?standings=117">2021 Record Data</a></footer>
+</body>
+  <script>
+    const spec1 = "Network.vg.json"
+    vegaEmbed("#vis1", spec1)
+          // result.view provides access to the Vega View API
+          .then(result => console.log(result))
+          .catch(console.warn);
+  </script>
+</html>
