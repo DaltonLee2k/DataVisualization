@@ -90,8 +90,8 @@
         "range": "category",
         "domain": {
           "fields": [
-            {"data": "nodes", "field": "group"}
-
+            {"data": "nodes", "field": "group"},
+            {"signal": "count"}
           ],
           "sort": true
         }
