@@ -1,18 +1,17 @@
 {
     "nodes": [
-        {"name": "University of Montana" ,"group":3 ,"index":0 },
-        {"name": "Montana State University" ,"group":2 ,"index":1 },
-        {"name": "Eastern Washington" ,"group":3 ,"index":2 },
-        {"name": "Cal Poly" ,"group":9 ,"index":3 },
-        {"name": "Southern Utah" ,"group":10 ,"index":4 },
-        {"name": "Weber State" ,"group":4 ,"index":5 },
-        {"name": "UC Davis" ,"group":4 ,"index":6 },
-        {"name": "Northern Colorado" ,"group":8 ,"index":7 },
-        {"name": "Northern Arizona" ,"group":5 ,"index":8 },
-        {"name": "Idaho" ,"group":7 ,"index":9 },
-        {"name": "Idaho State" ,"group":9 ,"index":10 },
+        {"name": "University of Montana" ,"group":1 ,"index":0 },
+        {"name": "Montana State University" ,"group":1 ,"index":1 },
+        {"name": "Eastern Washington" ,"group":1 ,"index":2 },
+        {"name": "Cal Poly" ,"group":2 ,"index":3 },
+        {"name": "Weber State" ,"group":1 ,"index":5 },
+        {"name": "UC Davis" ,"group":1 ,"index":6 },
+        {"name": "Northern Colorado" ,"group":2 ,"index":7 },
+        {"name": "Northern Arizona" ,"group":2 ,"index":8 },
+        {"name": "Idaho" ,"group":2 ,"index":9 },
+        {"name": "Idaho State" ,"group":2 ,"index":10 },
         {"name": "Sacremento State" ,"group":1 ,"index":11 },
-        {"name": "Portland State" ,"group":5 ,"index":12 }
+        {"name": "Portland State" ,"group":2 ,"index":12 }
     ],
     
     "links": [
@@ -32,7 +31,35 @@
         {"source":1,"target":10, "value": 1},
         {"source":1,"target":8, "value": 1},
         {"source":1,"target":3, "value": 1},
-        {"source":1,"target":5, "value": 1}
+        {"source":1,"target":5, "value": 1},
+
+        {"source":2,"target": 0, "value": 1},
+        {"source":2,"target": 1, "value": 1},
+        {"source":2,"target": 5, "value": 1 },
+        {"source":2,"target": 3, "value": 1 },
+        {"source":2,"target": 9, "value": 1 },
+        {"source":2,"target": 7, "value": 1 },
+        {"source":2,"target": 11, "value": 1 },
+        {"source":2,"target": 12, "value": 1 },
+
+        {"source":3,"target": 0,"value": 1},
+        {"source":3,"target": 1,"value": 1},
+        {"source":3,"target": 11,"value": 1},
+        {"source":3,"target": 10,"value": 1},
+        {"source":3,"target": 8,"value": 1},
+        {"source":3,"target": 12,"value": 1},
+        {"source":3,"target": 2,"value": 1},
+        {"source":3,"target": 6,"value": 1},
+
+        {"source": 5,"target":0, "value": 1},
+        {"source": 5,"target":1, "value": 1},
+        {"source": 5,"target":2, "value": 1},
+        {"source": 5,"target":6, "value": 1},
+        {"source": 5,"target":11, "value": 1},
+        {"source": 5,"target":10, "value": 1},
+        {"source": 5,"target":8, "value": 1},
+        {"source": 5,"target":12, "value": 1}
+
         
     ]
 }
