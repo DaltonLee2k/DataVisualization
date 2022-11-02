@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega/v5.json",
     "description": "A dive into Big Sky Football and Grizzly Strengh of Schedule",
-    "width": 770,
-    "height": 770,
+    "width": 1200,
+    "height": 900,
     "padding": 2,
   
     "signals": [
