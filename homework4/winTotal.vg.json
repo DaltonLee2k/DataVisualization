@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "Big sky 2021 opponnent wins visualized ",
-    "title": {"text": "Big Sky combined wins in 2021 from 2022 opponents"},
+    "title": {"text": "Big Sky 2022 opponent combined wins (2021 win data)"},
     "height": 300,
     "width": 400,
     "data": {
