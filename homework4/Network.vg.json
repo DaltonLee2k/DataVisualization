@@ -6,7 +6,7 @@
     "padding": 2,
   
     "signals": [
-      { "name": "cellSize", "value": 10 },
+      { "name": "cellSize", "value": 30 },
       { "name": "count", "update": "length(data('nodes'))" },
       { "name": "width", "update": "span(range('position'))" },
       { "name": "height", "update": "width" },
@@ -87,7 +87,7 @@
       {
         "name": "color",
         "type": "ordinal",
-        "range": ["#00ff00","#ffff00","#ff0000"],
+        "range": ["#4dff4d","#ffff4d","#ff4d4d"],
         "domain": {
           "fields": [
             {"data": "nodes", "field": "group"},
