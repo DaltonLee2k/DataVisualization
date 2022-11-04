@@ -10,10 +10,27 @@
     h3 {text-align: center;}
     div {text-align: center;}
     footer {text-align: center; color: black;}
+    ul.ordering {    list-style:none;   min-width:250px; }
+    ul.ordering li{ 
+        display:block; 
+        clear:left; 
+        vertical-align:middle;  
+        font-size: 10px;
+        line-height: 20px; 
+        padding-left: 5px; 
+    }
+    ul.ordering li span{  width: 24px; height: 24px; background:#4dff4d;  display:inline-block; margin-right:6px }
+    ul.ordering li:nth-child(2) span{ background:#ffff4d !important;  }
+    ul.ordering li:nth-child(3) span{ background:#ff4d4d !important;  }
 </style>
 <body>
     <h3>The Montana Grizzlies 2022 football schedule is one of the toughest in the big sky</h3>
     <div id="vis1"></div>
+    <ul class="ordering">
+      <li><span></span>Game between winning teams</li>
+      <li><span></span>Game between winning team and losing team</li>
+      <li><span></span>Game between losing teams</li>
+      </ul>
     <div id="vis2"></div>
 
     <footer>Sources: <a href="https://www.espn.com/college-football/standings/_/group/20/view/fcs-i-aa">2022 Team Schedules | </a><a href="https://bigskyconf.com/standings.aspx?standings=117">2021 Record Data</a></footer>
