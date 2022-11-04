@@ -1,30 +1,66 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": {"text": "Big Sky 2021 Opponents Win Totals", "anchor": "middle"},
+    "description": "Big sky 2021 opponnent wins visualized ",
+    "title": {"text": "Big Sky combined wins in 2021 from 2022 opponents"},
+    "height": 300,
+    "width": 400,
     "data": {
-      "url": "winData.json"
+      "values": [
+      {
+          "name": "University of Montana",
+          "oppWins": 35
+      },
+      {
+          "name": "Montana State University",
+          "oppWins": 30
+      },
+      {
+          "name": "Eastern Washington",
+          "oppWins": 36
+      },
+      {
+          "name": "Sacremento State",
+          "oppWins": 32
+      },
+      {
+          "name": "Weber State",
+          "oppWins": 41
+      },
+      {
+          "name": "Portland State",
+          "oppWins": 33
+      },
+      {
+          "name": "Idaho",
+          "oppWins": 36
+      },
+      {
+          "name": "Idaho State",
+          "oppWins": 33
+      },
+      {
+          "name": "Northern Arizona",
+          "oppWins": 28
+      },
+      {
+          "name": "Cal Poly",
+          "oppWins": 41
+      },
+      {
+          "name": "UC Davis",
+          "oppWins": 31
+      },
+      {
+          "name": "Northern Colorado",
+          "oppWins": 38
+      }
+  ]
     },
-    "width": {"step": 32},
     "mark": "bar",
     "encoding": {
-      "column": {
-        "field": "Year", "type": "ordinal", "spacing": 10,
-        "header": {"orient": "bottom"}
-      },
-      "y": {
-        "field": "oppWins",
-        "type": "quantitative",
-        "title": "Total 2021 Big Sky wins by opponents",
-        "axis": {"grid": true}
-      },
-      "x": {
-        "field": "name",
-        "type": "ordinal",
-        "axis": null
-      }
-    },
-    "config": {
-      "view": {"stroke": "transparent"},
-      "axis": {"domainWidth": 1}
+      "color": {"value": "#33d6ff"},
+      "x": {"field": "name", "type": "nominal", "axis": {"labelAngle": 4000}, "title": "School"},
+      "y": {"field": "oppWins", "type": "quantitative", "title": "Combined opponent wins"}
     }
   }
+  
