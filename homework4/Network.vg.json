@@ -4,7 +4,7 @@
     "width": 1200,
     "height": 900,
     "padding": 2,
-    "title": {"text": "2022 Big Sky football Schedule "},
+    "title": {"text": "2022 Big Sky football Schedule ", "align": "center", "orient": "bottom"},
   
     "signals": [
       { "name": "cellSize", "value": 30 },
