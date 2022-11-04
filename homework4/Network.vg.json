@@ -87,7 +87,7 @@
       {
         "name": "color",
         "type": "ordinal",
-        "range": "category",
+        "range": ["#00ff00","#ffff00","#ff0000"],
         "domain": {
           "fields": [
             {"data": "nodes", "field": "group"},

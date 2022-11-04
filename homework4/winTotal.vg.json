@@ -1,0 +1,30 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {"text": "Big Sky 2021 Opponents Win Totals", "anchor": "middle"},
+    "data": {
+      "url": "winData.json"
+    },
+    "width": {"step": 32},
+    "mark": "bar",
+    "encoding": {
+      "column": {
+        "field": "Year", "type": "ordinal", "spacing": 10,
+        "header": {"orient": "bottom"}
+      },
+      "y": {
+        "field": "oppWins",
+        "type": "quantitative",
+        "title": "Total 2021 Big Sky wins by opponents",
+        "axis": {"grid": true}
+      },
+      "x": {
+        "field": "name",
+        "type": "ordinal",
+        "axis": null
+      }
+    },
+    "config": {
+      "view": {"stroke": "transparent"},
+      "axis": {"domainWidth": 1}
+    }
+  }

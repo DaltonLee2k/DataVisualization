@@ -1,0 +1,50 @@
+[
+    {
+        "name": "University of Montana",
+        "oppWins": 35
+    },
+    {
+        "name": "Montana State University",
+        "oppWins": 30
+    },
+    {
+        "name": "Eastern Washington",
+        "oppWins": 36
+    },
+    {
+        "name": "Sacremento State",
+        "oppWins": 32
+    },
+    {
+        "name": "Weber State",
+        "oppWins": 41
+    },
+    {
+        "name": "Portland State",
+        "oppWins": 33
+    },
+    {
+        "name": "Idaho",
+        "oppWins": 36
+    },
+    {
+        "name": "Idaho State",
+        "oppWins": 33
+    },
+    {
+        "name": "Northern Arizona",
+        "oppWins": 28
+    },
+    {
+        "name": "Cal Poly",
+        "oppWins": 41
+    },
+    {
+        "name": "UC Davis",
+        "oppWins": 31
+    },
+    {
+        "name": "Northern Colorado",
+        "oppWins": 38
+    }
+]
